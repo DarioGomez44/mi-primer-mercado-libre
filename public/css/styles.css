@@ -1,0 +1,132 @@
+
+.logo {
+    width: 132px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+header{
+    background-color: yellow;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.precio{
+font-size: 18px;
+}
+.descripcion{
+font-size: 16PX;
+}
+.descuento {
+font-size: 16px;
+} 
+
+h2{
+    font-size: 24px;
+}
+
+.barra {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    border-color: #666;
+}
+.input{
+    position: relative;
+    top: 15px;
+    left: 10px;
+    border-width: 1px;
+    border-color: #666;
+    border-radius: 4px;
+}
+.lupa{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 10px;
+    border-radius: 4px;
+    top: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666;
+}
+.fa-search:before {
+    content: "\f002";
+    position: relative;
+    left: 2px;
+    top: 1px;
+}
+.mano{
+    position: relative;
+    left: 60px;
+    
+}
+.fa-hand-holding-usd:before {
+    content: "\f4c0";
+    color: #39b54a;
+}
+.burger-menu {
+    background-color: #03264C;
+    color: #ebebeb;
+    padding: 18px;
+    margin: 22px;
+    border-radius: 10px;
+    font-size: 32px;
+    width: 9px;
+    height: 6px;
+    left: 116px;
+    position: relative;
+    cursor: pointer;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    position: relative;
+    left: -10px;
+    top: -13px;
+}
+.fa-sign-in-alt:before {
+    content: "\f2f6";
+    color: #1259c3;
+}
+.fa-shopping-basket:before {
+    content: "\f291";
+    color: #1259c3;
+}
+.fa-id-card:before {
+    content: "\f2c2";
+    color: #1259c3;
+}
+.footer{
+     text-align: center;
+     margin-bottom: 10px;  
+     position: relative;
+     top: 40px; 
+}
+.fa-credit-card:before { 
+    content: "\f09d";
+    color: #1259c3;
+    font-size: 2em;
+    position: relative;
+    top: -3px;
+}  
+.fa-gift:before {
+    content: "\f06b";
+    color: #1259c3;
+    font-size: 2em;
+    position: relative;
+    
+}
+.fa-user-shield:before {
+    content: "\f505";
+    color: #1259c3;
+    font-size: 2em;
+    position: relative;
+   
+}
+
