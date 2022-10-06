@@ -1,95 +1,106 @@
-
-.logo {
-    width: 132px;
-    position: relative;
-    left: 20px;
-    top: 10px;
+*{
+   box-sizing: border-box;
 }
+
 
 header{
     background-color: yellow;
+   /* border: 2PX solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
     font-size: 12px;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.precio{
-font-size: 18px;
-}
-.descripcion{
-font-size: 16PX;
-}
-.descuento {
-font-size: 16px;
-} 
-
-h2{
-    font-size: 24px;
+.banner{
+ 
+ position: relative;
+    top: -22px;
 }
 
-.barra {
-    position: relative;
-    top: 15px;
-    left: 10px;
-    border-color: #666;
+/* imagen mercado liebre*/
+img{ width: 44%;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    }
+
+
+    /* contenedor de logo */
+.logo { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   /* border: 2px solid black;*/
+    align-items: center;
+    justify-content: space-around;
 }
-.input{
+	/* barra de busqueda*/
+ .buscar{ 
     position: relative;
-    top: 15px;
-    left: 10px;
-    border-width: 1px;
-    border-color: #666;
-    border-radius: 4px;
-}
-.lupa{
-    font-size: 15px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    color: black;
-    position: relative;
-    left: 10px;
-    border-radius: 4px;
-    top: 17px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #666;
-}
-.fa-search:before {
-    content: "\f002";
-    position: relative;
-    left: 2px;
-    top: 1px;
-}
-.mano{
-    position: relative;
-    left: 60px;
+    width: 44%;
+    display: flex;
+    flex-wrap: wrap;
     
+ } 
+ .input-home{
+
+    width: 80%;
+
+ }
+ /*codigo de la lupa*/
+ .fa-search:before {
+    content: "\f002";
+    padding: 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 21%;
+    cursor: pointer;
 }
-.fa-hand-holding-usd:before {
-    content: "\f4c0";
-    color: #39b54a;
+ .mano{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    top: 21px;
 }
+
 .burger-menu {
     background-color: #03264C;
     color: #ebebeb;
-    padding: 18px;
+    padding: 23px;
     margin: 22px;
     border-radius: 10px;
     font-size: 32px;
     width: 9px;
     height: 6px;
-    left: 116px;
+    left: 41%;
     position: relative;
     cursor: pointer;
+    top: 18px;
 }
+
+/*menu interior hambur.*/
 .fa-bars:before {
     content: "\f0c9";
     position: relative;
-    left: -10px;
-    top: -13px;
+    left: -14px;
+    top: -16px;
 }
+/* Href del encabezado */
+ul{
+    display: none;
+} 
+
+/* colores de los iconos */
 .fa-sign-in-alt:before {
     content: "\f2f6";
     color: #1259c3;
@@ -102,12 +113,104 @@ h2{
     content: "\f2c2";
     color: #1259c3;
 }
+
+/********* MAIN ********/
+.precio{ 
+font-size: 18px;
+width: 30%;
+}
+
+.descripcion{
+font-size: 16PX;
+display: none;
+
+}
+
+.descuento {
+ width: 70%;
+font-size: 16px;
+color: #23c339;
+} 
+
+h2{
+    font-size: 24px;
+    background-color: #ebebeb;
+    
+    
+    position: relative;
+   
+}
+
+.main,.main-ofertas{
+    background-color: white;
+    justify-content: space-around;
+    border: #ebebeb solid 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.detalles-main:hover {
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    border-top: 2px solid #ebebeb;
+    border-bottom: 10px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;   
+    background-color: white;
+}
+
+.cuadrado:hover .descripcion  {
+    display: block;
+}
+.cuadrado {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cuadrado:hover .fa-truck:before {
+    content: "\f0d1";
+    background-color: transparent;
+    outline: 2px dashed;
+    transform: rotate(-45deg);
+    border: solid transparent;
+}
+
+.fa-truck:before {     /* camioncito de reparto */
+    content: "\f0d1";
+   /* display: block;*/
+    font-size: 22px;
+    padding: 8px;
+    width: 26px;
+    height: 23px;
+    border: 1px solid #23c339;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: -35px;
+    color: #23c339;
+}
+
+
+
+/***** footer y sus iconos ************/
+
 .footer{
      text-align: center;
      margin-bottom: 10px;  
      position: relative;
      top: 40px; 
 }
+
+  .section-footer:hover .fa-user-shield:before  { color: hsla(59, 94%, 50%, 0.986);  }
+ .section-footer :hover  .fa-credit-card:before{ color: hsla(59, 94%, 50%, 0.986);  }
+ .section-footer :hover  .fa-gift:before { color: hsla(59, 94%, 50%, 0.986);  }
+    
+
 .fa-credit-card:before { 
     content: "\f09d";
     color: #1259c3;
@@ -129,4 +232,315 @@ h2{
     position: relative;
    
 }
+/************** fin de footer************/
 
+/*********** HTML REGISTER (CREAR CUENTA)  ******************/
+
+ .crear-usuario{ 
+    width: 100%;
+padding: 20px 15px;
+
+}
+
+
+
+.nomb-apell,.usuario,.nacimiento,
+.domicilio{
+    border-radius: 10px;
+    top: 15px;
+    height: 42px;
+    width: 80%;
+    left: 11%;
+    position: relative;
+    margin-bottom: 15px;
+    border: 2px solid #005aff;
+}
+.nacimiento{ top: -8px; }
+.domicilio  { top: -7px; }
+
+.fecha-n{   
+    font-size: 18px;
+    padding: 0px;
+    left: 12%;
+    position: relative;
+    font-weight: bold;
+}
+
+.perfil-C-V-A{
+    display: flex;
+    font-size: 19px;
+    justify-content: space-around;
+    height: 48px;
+    font-weight: bold;
+    
+}
+.perfil-vend,.perfil-comp,.perfil-Ambos{
+    cursor: pointer;
+}
+
+.register-categoria {
+    display: flex;
+    /* justify-content: center; */
+    font-size: 19px;
+    height: 111px;
+    /* font-weight: bold; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    cursor: pointer;
+}
+ .foto{ 
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+    font-weight: bold
+}
+ 
+.foto-register{
+    font-size: 14px;
+    height: 43px;
+    position: relative;
+    top: -4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pass-1{  
+      display: flex;
+    justify-content: space-around;
+}
+.pass-register{
+    width: 45%;
+    border-radius: 10%;
+    top: 15px;
+    height: 42px;
+    position: relative;
+    margin-bottom: 26px;
+    border: 2px solid #005aff;
+}
+button{
+    
+    width: 90%;
+    left: 5%;
+    position: relative;
+    border-radius: 10px;
+    height: 34px;
+    top: 10px;
+    color: #fffefe;
+    font-size: 21px;
+    background-color: #005aff;
+    cursor: pointer;
+    border: 2px solid #005aff;
+}
+.boton-reset-register{
+background-color: #e72424;
+cursor: pointer;
+border: 2px solid #e72424;
+}
+.submit-register{
+    position: relative;
+    top: -6px;
+   
+}
+
+/****************  HTML LOGIN    **********************/
+
+ 
+ .form-login{    
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+     height: 300px;
+} 
+
+
+.input-pass-login,.input-user-login {
+    width: 90%;
+    position: relative;
+    top: 41px;
+    height: 25px;
+    border-radius: 10px;
+    height: 32px;
+    left: 5%;
+    border: 1px solid;
+    border: 2px solid #005aff;
+}
+.input-user-login{
+    top: 31px;
+}
+
+.login-boton    {
+    color: #ebebeb;
+    background-color: #005aff;
+    position: relative;
+    top: 72px;
+    border: 2px solid #005aff;
+    cursor: pointer;
+}
+    
+.boton-crea-cuenta{
+    width: 90%;
+    left: 5%;
+    position: relative;
+    height: 34px;
+    top: 111px;
+    color: #005aff;
+    font-size: 21px;
+    background-color: #ebebeb;
+    border: 4px solid transparent;
+    cursor: pointer;
+}
+  
+
+
+
+
+/******** Media Queris ******/
+
+@media ( min-width: 660px) {
+
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  .section-footer{
+    width: 30%;
+    height: 160px;
+  }
+
+  .strong-footer{
+    position: relative;
+    left: 34%;
+}
+  
+   .descripcion:hover{
+    display: block;
+   }
+    
+    .buscar {
+        width: 34%;
+        position: relative;
+        left: 10PX;
+    }
+    .mano{width: 33%;
+    top: 0px;}
+    
+    .input{
+         width: 27%;
+         position: relative;
+        left: 10PX; }
+   img{width: 30%; }
+ 
+ .burger-menu{
+    display: none;
+ }
+ 
+    .ul,.ul1{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;   }
+ 
+  .productos{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    width: 50%;
+   }
+   .detalles-main{
+    justify-content: space-between;
+    width: 47%;
+    display:block
+
+    
+   }
+   .main-ofertas{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+ /*************register********************/
+
+
+ .perfil-C-V-A{
+    display: flex;
+    font-size: 19px;
+    justify-content: space-around;
+    height: 48px;
+    font-weight: bold;
+}
+
+.register-categoria {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    height: 60px;
+    font-weight: bold;
+}
+ .foto{ 
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+    font-weight: bold;
+}
+ 
+.foto-register{
+    font-size: 18px;
+    height: 44px;
+    position: relative;
+    top: -20px;
+    font-weight: bold;
+}
+
+/***********LOGIN*******************/
+
+
+.form-login{    
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+     height: 300px;
+} 
+
+
+.input-pass-login,.input-user-login {
+    width: 90%;
+    position: relative;
+    top: 60px;
+    height: 25px;
+    border-radius: 10px;
+    height: 32px;
+    left: 5%;
+    border: 1px solid;
+}
+.input-user-login{
+    top: 31px;
+}
+
+.login-boton    {
+    color: #ebebeb;
+    background-color: #005aff;
+    position: relative;
+    top: 101px;
+    height: 40px;
+}
+
+   /*********Segundo media****************/
+
+  @media (min-width: 800px){
+    .detalles-main{width: 23%;}
+
+    .descuento  {text-align: center;}
+    
+    
+    .fa-truck:before {
+        font-size: 15px;
+        padding: 5px;
+        width: 18px;
+        height: 17px;
+        right: 4px;
+        top: -19px;
+    }
+  }
+
+}
